@@ -23,7 +23,7 @@ public class ServerController {
         return service.getAll();
     }
 
-    //Срабатывает когда мы переходим по URL
+
     @RequestMapping(value = "/clients/{id}", method = RequestMethod.GET)
     @ResponseBody
     public Client getClient(@PathVariable("id") long clientID){
